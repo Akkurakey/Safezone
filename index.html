@@ -190,38 +190,6 @@
             filter: sepia(20%) contrast(105%) brightness(85%) blur(0.5px);
         }
 
-        /* Updated Message Style - No Border */
-        .message {
-            position: relative;
-            z-index: 6;
-            font-size: 1.5rem; /* Increased size */
-            color: var(--crt-text);
-            padding: 0;
-            margin-bottom: 30px;
-            border: none; /* Removed border */
-            background: transparent; /* Removed background */
-            box-shadow: none; /* Removed box shadow */
-            
-            text-align: center;
-            width: 90%;
-            
-            /* Strong Text Shadow to ensure readability on any background */
-            text-shadow: 
-                2px 2px 0px #000, 
-                -1px -1px 0 #000,  
-                1px -1px 0 #000,
-                -1px 1px 0 #000,
-                1px 1px 0 #000,
-                0 0 15px rgba(134, 239, 172, 0.8);
-            
-            animation: floatText 4s ease-in-out infinite;
-        }
-        
-        @keyframes floatText {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
         .reset-btn {
             margin-top: 10px; 
             z-index: 6; 
