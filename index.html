@@ -349,10 +349,10 @@
                     pwrLight.classList.add('on');
                     
                     generateText();
-                }, 10);
+                }, 6000);
             };
 
-            // Fallback if AI takes too long (> 6 seconds)
+            // Fallback if AI takes too long (> 10 seconds)
             setTimeout(() => {
                 if (resultUi.style.opacity !== '1') {
                     // Use a reliable Unsplash dreamcore backup
@@ -364,7 +364,7 @@
                     pwrLight.classList.add('on');
                     generateText();
                 }
-            }, 10);
+            }, 10000);
         }
 
         function generateText() {
